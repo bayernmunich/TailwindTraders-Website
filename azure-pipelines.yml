@@ -1,12 +1,12 @@
 variables:
-  azureSubscription: name-of-your-azure-subscription
-  resourcegroup: name-of-your-resource-group
-  location: location of your resources
+  azureSubscription: Azure
+  resourcegroup: tailwin
+  location: eastus
   ImageName: website
 
 steps:
 - task: AzureResourceGroupDeployment@2
-  displayName: Azure
+  displayName: Azure Deployment
   inputs:
     azureSubscription: $(azureSubscription)
     resourceGroupName: $(resourcegroup)
